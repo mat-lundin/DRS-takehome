@@ -9,7 +9,7 @@
 
 /* override default browser link styling */
 a:-webkit-any-link {
-  color: white;
+  color: inherit;
 }
 
 
@@ -20,7 +20,7 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: #333;
-  background-image: linear-gradient(to right, white, white, #80461B);
+  background-image: linear-gradient(to right, white, darkgrey, #80461B);
 }
 
 li {
@@ -30,15 +30,25 @@ li {
 
 
 
-.navlink {
+.navlinkLight {
   display: block;
   color: var(--text-color);
   text-align: center;
   padding: 20px 20px;
   text-decoration: none;
-  font-size: large;
-  /* font-family: var(--font); */
-  font-family: var(--visbyFont);
+  font-size:x-large;
+  font-family: var(--westernFont);
+  float: right;
+}
+
+.navlinkDark {
+  display: block;
+  color: var(--dark-text-color);
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size:x-large;
+  font-family: var(--westernFont);
   float: right;
 }
 
@@ -50,9 +60,19 @@ li {
   padding: 0;
 }
 
-#banner {
+.bannerLight {
   background-image: url('./images/pexels-fwstudio-139309.jpeg');
   color: var(--text-color);
+  font-family: var(--westernFont);
+  padding-right: 7%;
+  padding-left: 7%;
+  padding-bottom: 4%;
+  padding-top: 2%
+}
+
+.bannerDark {
+  background-image: url('./images/pexels-fwstudio-139309.jpeg');
+  color: var(--dark-text-color);
   font-family: var(--westernFont);
   padding-right: 7%;
   padding-left: 7%;
@@ -76,7 +96,7 @@ h1 {
   margin-left: 44%;
 }
 
-#banner button {
+#banner .shopBtnLight {
   float: right;
   margin-right: 15%;
   font-size: 2em;
@@ -84,9 +104,23 @@ h1 {
   font-family: var(--westernFont);
 }
 
+#banner .shopBtnDark {
+  float: right;
+  margin-right: 15%;
+  font-size: 2em;
+  border-radius: 6px;
+  font-family: var(--westernFont);
+  background-color: darkgrey;
+}
+
 
 /* media queries */
-.navlink:hover {
+.navlinkLight:hover {
+  background-color: #111;
+  cursor: pointer;
+}
+
+.navlinkDark:hover {
   background-color: #111;
   cursor: pointer;
 }
