@@ -13,7 +13,7 @@ a:-webkit-any-link {
 }
 
 
-ul {
+.navLight {
   list-style-type: none;
 
   margin: 0;
@@ -21,6 +21,15 @@ ul {
   overflow: hidden;
   background-color: #333;
   background-image: linear-gradient(to right, white, darkgrey, #80461B);
+}
+
+.navDark {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  background-image: linear-gradient(to right, white, navy, black);
 }
 
 li {
@@ -33,7 +42,7 @@ h1 {
   font-family: var(--westernFont);
 }
 
-.navlinkLight {
+.navLinkLight {
   display: block;
   color: var(--text-color);
   text-align: center;
@@ -42,9 +51,10 @@ h1 {
   font-size:x-large;
   font-family: var(--westernFont);
   float: right;
+  text-shadow: 1px 2px black;
 }
 
-.navlinkDark {
+.navLinkDark {
   display: block;
   color: var(--dark-text-color);
   text-align: center;
@@ -53,14 +63,16 @@ h1 {
   font-size:x-large;
   font-family: var(--westernFont);
   float: right;
+  text-shadow: 1px 2px black;
 }
 
 
 #logo {
-  height: 7%;
-  width: 7%;
+  height: 8%;
+  width: 8%;
   justify-self: left;
   padding: 0;
+  opacity: calc(.5);
 }
 
 .bannerLight {
@@ -95,11 +107,13 @@ h1 {
   font-size: 2.1em;
   margin-left: 20%;
   padding-bottom: .5em;
+  text-shadow: 1px 2px black;
 }
 
 #banner h3 {
   font-size: 2.1em;
   margin-left: 47%;
+  text-shadow: 1px 2px black;
 
 }
 
@@ -134,7 +148,7 @@ h1 {
 .productsDark {
   padding-top: 3em;
   align-self: center;
-  background-image: linear-gradient(to right, white, darkgrey, #80461B);
+  background-image: linear-gradient(to right, navy, black);
   padding-bottom: 3em;
   font-family: var(--westernFont);
   color: var(--dark-text-color);
@@ -166,7 +180,7 @@ h1 {
 .aboutDark {
   padding-top: 3em;
   padding-bottom: 5em;
-  background-image: linear-gradient(to right, white, darkgrey, #80461B);
+  background-image: linear-gradient(to right, navy, black);
   color: var(--dark-text-color);
 }
 
@@ -189,7 +203,7 @@ h1 {
 .contactDark {
   padding-top: 3em;
   padding-bottom: 5em;
-  background-image: linear-gradient(to right, white, darkgrey, #80461B);
+  background-image: linear-gradient(to right, navy, black);
   color: var(--dark-text-color);
 }
 
@@ -251,7 +265,7 @@ form .btn {
 }
 
 #darkBtn:hover {
-  background-image: linear-gradient(to right, white, white, navy);
+  background-image: radial-gradient(circle, white, white, black);
 }
 
 .product:hover {
