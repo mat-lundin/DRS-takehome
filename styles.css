@@ -6,30 +6,27 @@
 }
 
 /* override default browser link styling */
-a:-webkit-any-link{
+a:-webkit-any-link {
   color: white;
 }
 
 
 ul {
   list-style-type: none;
-  
+
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #333;
-  background-image: linear-gradient(to right, white , white, #80461B
-  );
+  background-image: linear-gradient(to right, white, white, #80461B);
 }
 
 li {
   display: inline;
-  
+
 }
 
-h1 {
-  text-align: center;
-  }
+
 
 .navlink {
   display: block;
@@ -60,15 +57,38 @@ h1 {
   padding-top: 2%
 }
 
+h1 {
+  text-align: left;
+  font-size: 3.5em;
+  text-shadow: 3px 2px black;
+}
+
+#banner h2 {
+  font-size: 2.1em;
+  margin-left: 20%;
+}
+
+#banner h3 {
+  font-size: 2.1em;
+  margin-left: 44%;
+}
+
 #banner button {
   float: right;
   margin-right: 15%;
-  font-size: large;
+  font-size: 2em;
   font-family: var(--font);
+  border-radius: 6px;
 }
 
 
 /* media queries */
 .navlink:hover {
   background-color: #111;
+  cursor: pointer;
+}
+
+#banner button:hover {
+  background-color: #80461B;
+  cursor: pointer;
 }
