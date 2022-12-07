@@ -80,7 +80,7 @@ li {
   padding-top: 2%
 }
 
-h1 {
+#banner h1 {
   text-align: left;
   font-size: 3.5em;
   text-shadow: 3px 2px black;
@@ -113,6 +113,29 @@ h1 {
   background-color: darkgrey;
 }
 
+#products {
+  margin-top: 3em;
+  
+}
+
+#products h1 {
+  text-align: center;
+  font-family: var(--westernFont);
+}
+
+.product {
+  margin-top: 3em;
+  height: 9em;
+  width: 9em;
+  background-image: url('./images/istockphoto-106548715-612x612.jpeg');
+  font-size: 19px;
+  font-family: var(--westernFont);
+  color: var(--text-color);
+  border-color: #80461B;
+  border-style: groove;
+  border-radius: 5px;
+}
+
 
 /* media queries */
 .navlinkLight:hover {
@@ -127,5 +150,10 @@ h1 {
 
 #banner button:hover {
   background-color: #80461B;
+  cursor: pointer;
+}
+
+.product:hover {
+  text-shadow: 3px 2px black;
   cursor: pointer;
 }
