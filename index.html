@@ -26,7 +26,7 @@
             <ul>
                 <li><img id="logo" src="./images/tree-logo.jpeg" alt="logo"></li>
                 <li id="contactLink" class="navlinkLight"><a href="#contact">Contact Us</a></li>
-                <li id="aboutLink" class="navlinkLight"><a href="">About</a></li>
+                <li id="aboutLink" class="navlinkLight"><a href="#about">About</a></li>
                 <li id="shopLink" class="navlinkLight"><a href="#products">Products</a></li>
                 <li id="homeLink" class="navlinkLight"><a href="#">Home</a></li>
             </ul>
@@ -36,10 +36,10 @@
         <h1>Wood Company</h1>
         <h2>Making Wood Work.</h2>
         <h3>For You.</h3>
-        <button id="shopBtn" class="shopBtnLight">Shop Now!</button>
+        <a href="#products"><button id="shopBtn" class="shopBtnLight">Shop Now!</button></a> 
         <button id="darkBtn" class="darkBtnLight">Dark Mode</button>
     </div>
-    <div id="products">
+    <div id="products" class="productsLight">
         <h1>Products</h1>
         <div class="container">
             <div class="row">
@@ -96,7 +96,7 @@
             </div>
         </div>
     </div>
-<div id="about">
+<div id="about" class="aboutLight">
     <h1>About Us</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
         molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
@@ -121,7 +121,7 @@
         quasi aliquam eligendi, placeat qui corporis!</p>
 </div>
 
-    <div id="contact">
+    <div id="contact" class="contactLight">
         <h1>Contact Us</h1>
         <form>
             <p>We'd love to hear your feedback or any questions you may have!</p>
@@ -131,7 +131,7 @@
             <input type="email" id="email" name="email"><br>
             <label for="msg">Message:</label><br>
             <textarea id="msg" name="msg" rows="5" cols="50"></textarea><br>
-            <input type="submit" value="Submit" class="btn">
+            <input type="submit" value="Submit" id="submitBtn" class="btn">
             <input type="reset" class="btn">
         </form>
     </div>

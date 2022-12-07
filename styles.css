@@ -79,8 +79,8 @@ h1 {
   font-family: var(--westernFont);
   padding-right: 7%;
   padding-left: 7%;
-  padding-bottom: 4%;
-  padding-top: 2%
+  padding-bottom: 22em;
+  padding-top: 3em;
 }
 
 #banner h1 {
@@ -106,27 +106,38 @@ h1 {
 .shopBtnLight {
   float: right;
   margin-right: 15%;
+  margin-top: 2em;
   font-size: 2em;
   border-radius: 6px;
   font-family: var(--westernFont);
-  margin-top: 2em;
   
 }
 
  .shopBtnDark {
   float: right;
   margin-right: 15%;
+  margin-top: 2em;
   font-size: 2em;
   border-radius: 6px;
   font-family: var(--westernFont);
   background-color: darkgrey;
 }
 
-#products {
+.productsLight {
   padding-top: 3em;
   align-self: center;
   background-image: linear-gradient(to right, white, darkgrey, #80461B);
   padding-bottom: 3em;
+  font-family: var(--westernFont);
+}
+
+.productsDark {
+  padding-top: 3em;
+  align-self: center;
+  background-image: linear-gradient(to right, white, darkgrey, #80461B);
+  padding-bottom: 3em;
+  font-family: var(--westernFont);
+  color: var(--dark-text-color);
 }
 
 .product {
@@ -135,11 +146,10 @@ h1 {
   width: 9em;
   background-image: url('./images/istockphoto-106548715-612x612.jpeg');
   font-size: 19px;
-  font-family: var(--westernFont);
-  color: var(--text-color);
   border-color: #80461B;
   border-style: groove;
   border-radius: 5px;
+  color: var(--text-color);
 }
 
 .prodDesc {
@@ -147,10 +157,17 @@ h1 {
   display: none;
 }
 
-#about {
+.aboutLight {
   padding-top: 3em;
   padding-bottom: 5em;
   background-image: linear-gradient(to right, white, darkgrey, #80461B);
+}
+
+.aboutDark {
+  padding-top: 3em;
+  padding-bottom: 5em;
+  background-image: linear-gradient(to right, white, darkgrey, #80461B);
+  color: var(--dark-text-color);
 }
 
 #about h1 {
@@ -163,10 +180,17 @@ h1 {
   font-family: var(--westernFont);
 }
 
-#contact {
+.contactLight {
   padding-top: 3em;
   padding-bottom: 5em;
   background-image: linear-gradient(to right, white, darkgrey, #80461B);
+}
+
+.contactDark {
+  padding-top: 3em;
+  padding-bottom: 5em;
+  background-image: linear-gradient(to right, white, darkgrey, #80461B);
+  color: var(--dark-text-color);
 }
 
 #contact h1 {
@@ -221,9 +245,13 @@ form .btn {
   cursor: pointer;
 }
 
-#banner button:hover {
+#shopBtn:hover {
   background-color: #80461B;
   cursor: pointer;
+}
+
+#darkBtn:hover {
+  background-image: linear-gradient(to right, white, white, navy);
 }
 
 .product:hover {
