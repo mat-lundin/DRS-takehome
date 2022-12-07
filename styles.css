@@ -2,7 +2,9 @@
 :root {
   --text-color: white;
   --dark-text-color: gray;
-  --font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  --font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  --westernFont: "Holtwood One SC", sans-serif;
+  --visbyFont: "Visby", sans-serif;
 }
 
 /* override default browser link styling */
@@ -35,7 +37,8 @@ li {
   padding: 20px 20px;
   text-decoration: none;
   font-size: large;
-  font-family: var(--font);
+  /* font-family: var(--font); */
+  font-family: var(--visbyFont);
   float: right;
 }
 
@@ -50,7 +53,7 @@ li {
 #banner {
   background-image: url('./images/pexels-fwstudio-139309.jpeg');
   color: var(--text-color);
-  font-family: var(--font);
+  font-family: var(--westernFont);
   padding-right: 7%;
   padding-left: 7%;
   padding-bottom: 4%;
@@ -77,8 +80,8 @@ h1 {
   float: right;
   margin-right: 15%;
   font-size: 2em;
-  font-family: var(--font);
   border-radius: 6px;
+  font-family: var(--westernFont);
 }
 
 
