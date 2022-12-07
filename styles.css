@@ -13,11 +13,12 @@ a:-webkit-any-link{
 
 ul {
   list-style-type: none;
+  
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #333;
-  background-image: linear-gradient(to right, white , #80461B
+  background-image: linear-gradient(to right, white , white, #80461B
   );
 }
 
@@ -59,13 +60,15 @@ h1 {
   padding-top: 2%
 }
 
-#banner img {
-  width: 90%;
- 
+#banner button {
+  float: right;
+  margin-right: 15%;
+  font-size: large;
+  font-family: var(--font);
 }
 
 
 /* media queries */
-li a:hover {
+.navlink:hover {
   background-color: #111;
 }
