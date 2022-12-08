@@ -216,7 +216,7 @@ form {
   font-family: var(--westernFont);
 }
 
-input:not(.btn) {
+input:not(.formBtnLight, .formBtnDark) {
   font-family: var(--visbyFont);
 }
 
@@ -224,10 +224,19 @@ input:not(.btn) {
   font-family: var(--visbyFont);
 }
 
-form .btn {
+.formBtnLight {
   /* background-color: var(--dark-text-color); */
   border-style: solid;
   border-color: black;
+  font-family: var(--westernFont);
+}
+
+.formBtnDark {
+  /* background-color: var(--dark-text-color); */
+  border-style: solid;
+  border-color: white;
+  font-family: var(--westernFont);
+  color: var(--dark-text-color);
 }
 
 .darkBtnLight {
@@ -277,8 +286,14 @@ form .btn {
   display:block;
 }
 
-form .btn:hover {
+.formBtnLight:hover {
   border-style: solid;
   border-color: black;
   text-shadow: 1px 1px gray;
+}
+
+.formBtnDark:hover {
+  border-style: solid;
+  border-color: black;
+  text-shadow: 1px 1px black;
 }

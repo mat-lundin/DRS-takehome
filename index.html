@@ -123,7 +123,7 @@
 
     <div id="contact" class="contactLight">
         <h1>Contact Us</h1>
-        <form>
+        <form id="contactForm">
             <p>We'd love to hear your feedback or any questions you may have!</p>
             <label for="fname">First name:</label><br>
             <input type="text" id="fname" name="fname"><br>
@@ -131,8 +131,9 @@
             <input type="email" id="email" name="email"><br>
             <label for="msg">Message:</label><br>
             <textarea id="msg" name="msg" rows="5" cols="50"></textarea><br>
-            <input type="submit" value="Submit" id="submitBtn" class="btn">
-            <input type="reset" class="btn">
+            <input type="submit" value="Submit" id="submitBtn" class="formBtnLight">
+            <input type="reset" id="resetBtn" class="formBtnLight">
+            <p id="confirm"></p>
         </form>
     </div>
 </body>
