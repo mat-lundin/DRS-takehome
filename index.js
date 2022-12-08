@@ -21,6 +21,7 @@ const fnameEl = document.getElementById('fname');
 const emailEl = document.getElementById('email');
 const msgEl = document.getElementById('msg');
 const confirmEl = document.getElementById('confirm');
+const popup = document.getElementById("myPopup");
 
 // keep track of darkmode vs lightmode
 let isDark = false;
@@ -87,7 +88,12 @@ resetBtn.addEventListener('click', ()=>{
 
 // confirmation popup
 function showFormStatus() {
-    var popup = document.getElementById("myPopup");
+    
     popup.classList.toggle("show");
-    popup.innerHTML = 'Form Data Logged to Console!'
+    popup.innerHTML = 'Form Data Logged to Console!';
+  }
+
+//   index.html calls this after a setTimeout of 2 seconds
+  function hideFormStatus() {
+    popup.classList.toggle("show");
   }
