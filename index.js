@@ -72,28 +72,39 @@ contactForm.addEventListener('submit',(e)=>{
 
     if (fnameVal || emailVal || msgVal) {
         console.log(`First Name: ${fnameVal} \nEmail: ${emailVal}\nMessage: ${msgVal}`);
-        confirmEl.innerHTML = 'Form Data Logged to Console!'
+        showFormConfirm()
         fnameEl.value = '';
         emailEl.value = '';
         msgEl.value = '';
     } else {
-        confirmEl.innerHTML = 'Oops! No data entered. Please enter data and submit.'
+        showFormDeny();
     };
 });
 
 // when reset button is clicked, remove confirmation text
 resetBtn.addEventListener('click', ()=>{
     confirmEl.innerHTML = ''
+    if (popup.classList.contains('show')) {
+        popup.classList.toggle('show')
+    }
 });
 
 // confirmation popup
-function showFormStatus() {
-    
+function showFormConfirm() {
     popup.classList.toggle("show");
     popup.innerHTML = 'Form Data Logged to Console!';
   }
 
-//   index.html calls this after a setTimeout of 2 seconds
-  function hideFormStatus() {
+// confirmation popup
+function showFormDeny() {
     popup.classList.toggle("show");
-  }
+    popup.innerHTML = 'Oops! No data entered. Please enter data and submit.';
+  };
+
+// index.html calls this after a setTimeout of 2 seconds
+// reset button also hides popup, so check before toggling the class
+  function hideFormStatus() {
+    if (popup.classList.contains('show')) {
+        popup.classList.toggle('show')
+    };
+  };
