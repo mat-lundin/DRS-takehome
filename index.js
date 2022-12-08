@@ -84,3 +84,10 @@ contactForm.addEventListener('submit',(e)=>{
 resetBtn.addEventListener('click', ()=>{
     confirmEl.innerHTML = ''
 });
+
+// confirmation popup
+function showFormStatus() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+    popup.innerHTML = 'Form Data Logged to Console!'
+  }

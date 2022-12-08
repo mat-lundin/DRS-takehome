@@ -131,11 +131,17 @@
             <input type="email" id="email" name="email"><br>
             <label for="msg">Message:</label><br>
             <textarea id="msg" name="msg" rows="5" cols="50"></textarea><br>
-            <input type="submit" value="Submit" id="submitBtn" class="formBtnLight">
+            
+            <div class="popup" onclick="showFormStatus()"><input type="submit" value="Submit" id="submitBtn" class="formBtnLight">
+                <span class="popuptext" id="myPopup">Popup text...</span>
+              </div>
             <input type="reset" id="resetBtn" class="formBtnLight">
             <p id="confirm"></p>
         </form>
     </div>
+    <div class="popup" onclick="showFormStatus()">Click me!
+        <span class="popuptext" id="myPopup">Popup text...</span>
+      </div>
 </body>
 
 
