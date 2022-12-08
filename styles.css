@@ -85,7 +85,7 @@ h1 {
 }
 
 .bannerDark {
-  background-image: url('./assets/images/pexels-fwstudio-139309.jpeg');
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/images/pexels-fwstudio-139309.jpeg');
   color: var(--dark-text-color);
   font-family: var(--westernFont);
   padding-right: 7%;
@@ -98,14 +98,14 @@ h1 {
   text-align: left;
   font-size: 3.9em;
   text-shadow: 3px 3px black;
-  padding-bottom: 3em;
+  padding-bottom: 2.3em;
   padding-top: 1em;
 }
 
 #banner h2 {
   font-size: 2.1em;
   margin-left: 20%;
-  padding-bottom: .7em;
+  padding-bottom: .9em;
   text-shadow: 1px 2px black;
 }
 
