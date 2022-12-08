@@ -4,7 +4,7 @@
   --dark-text-color: #008bff;
   --westernFont: "Holtwood One SC", sans-serif;
   --visbyFont: "Visby", sans-serif;
-  --light-background: linear-gradient(to right, white, white, white, white, white, white, #80461B);
+  --light-background: #E8DACC;
 }
 
 /* override default browser link styling */
@@ -12,14 +12,13 @@ a:-webkit-any-link {
   color: inherit;
 }
 
-
 .navLight {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
-  background-image: var(--light-background)
+  background-color: var(--light-background);
+  /* background-image: var(--light-background) */
 }
 
 .navDark {
@@ -28,12 +27,11 @@ a:-webkit-any-link {
   padding: 0;
   overflow: hidden;
   background-color: #333;
-  background-image: linear-gradient(to right, white, navy, black);
+  background-image: linear-gradient(to right, navy, black);
 }
 
 li {
   display: inline;
-
 }
 
 h1 {
@@ -67,10 +65,10 @@ h1 {
 
 
 #logo {
-  height: 8%;
-  width: 8%;
+  height: 7%;
+  width: 7%;
   justify-self: left;
-  padding: 0;
+  padding-left: 1em;
 }
 
 .bannerLight {
@@ -137,7 +135,7 @@ h1 {
 
 .productsLight {
   padding-top: 3em;
-  background-image: var(--light-background);
+  background-color: var(--light-background);
   padding-bottom: 3em;
   font-family: var(--westernFont);
 }
@@ -191,7 +189,7 @@ h1 {
 .aboutLight {
   padding-top: 3em;
   padding-bottom: 5em;
-  background-image: var(--light-background);
+  background-color: var(--light-background);
 }
 
 .aboutDark {
@@ -208,13 +206,14 @@ h1 {
 #about p {
   margin-left: 6em;
   margin-right: 6em;
-  font-family: var(--westernFont);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
 }
 
 .contactLight {
   padding-top: 3em;
   padding-bottom: 5em;
-  background-image: var(--light-background);
+  background-color: var(--light-background);
 }
 
 .contactDark {
@@ -234,13 +233,13 @@ form {
 }
 
 input:not(.formBtnLight, .formBtnDark) {
-  font-family: var(--visbyFont);
+  font-family: Arial, Helvetica, sans-serif;
   border-style: solid;
   border-radius: 6px;
 }
 
 #msg {
-  font-family: var(--visbyFont);
+  font-family: Arial, Helvetica, sans-serif;
   border-style: solid;
   border-radius: 6px;
 }
@@ -255,7 +254,6 @@ input:not(.formBtnLight, .formBtnDark) {
 }
 
 .formBtnDark {
-  /* background-color: var(--dark-text-color); */
   border-style: solid;
   border-color: black;
   border-radius: 6px;
@@ -265,12 +263,10 @@ input:not(.formBtnLight, .formBtnDark) {
 }
 
 .darkBtnLight {
- 
  margin-top: 1.5em;
  margin-left: 19em;
  border-radius: 6px;
  font-family: var(--westernFont);
- 
 }
 
 .darkBtnDark {
@@ -292,9 +288,11 @@ input:not(.formBtnLight, .formBtnDark) {
 .popup .popuptext {
   visibility: hidden;
   width: 325px;
-  background-color: #ffffff30;
+  background-color: #80461B;
   color: #fff;
   text-align: center;
+  border-style: solid;
+  border-color: black;
   border-radius: 6px;
   padding: 5px 3px;
   position: absolute;
@@ -327,7 +325,7 @@ input:not(.formBtnLight, .formBtnDark) {
 /* media queries */
 .navLinkLight:hover {
   text-shadow: 1px 3px black;
-  background-color: #ffffff30;
+  background-color: #ffffff80;
   cursor: pointer;
   border-radius: 24px;
 }
@@ -348,11 +346,9 @@ input:not(.formBtnLight, .formBtnDark) {
   background-image: radial-gradient(circle, white, white, black);
 }
 
-
 .product:hover {
   text-shadow: 3px 2px black;
   cursor: pointer;
-  
 }
 
 .product:hover .prodDesc {
