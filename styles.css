@@ -1,9 +1,10 @@
 /* variables */
 :root {
   --text-color: white;
-  --dark-text-color: hsl(210, 50%, 72%);
+  --dark-text-color: #008bff;
   --westernFont: "Holtwood One SC", sans-serif;
   --visbyFont: "Visby", sans-serif;
+  --light-background: linear-gradient(to right, white, white, white, white, white, white, #80461B);
 }
 
 /* override default browser link styling */
@@ -18,7 +19,7 @@ a:-webkit-any-link {
   padding: 0;
   overflow: hidden;
   background-color: #333;
-  background-image: linear-gradient(to right, white, darkgrey, #80461B);
+  background-image: var(--light-background)
 }
 
 .navDark {
@@ -70,7 +71,6 @@ h1 {
   width: 8%;
   justify-self: left;
   padding: 0;
-  opacity: calc(.5);
 }
 
 .bannerLight {
@@ -137,7 +137,7 @@ h1 {
 
 .productsLight {
   padding-top: 3em;
-  background-image: linear-gradient(to right, white, darkgrey, #80461B);
+  background-image: var(--light-background);
   padding-bottom: 3em;
   font-family: var(--westernFont);
 }
@@ -191,7 +191,7 @@ h1 {
 .aboutLight {
   padding-top: 3em;
   padding-bottom: 5em;
-  background-image: linear-gradient(to right, white, darkgrey, #80461B);
+  background-image: var(--light-background);
 }
 
 .aboutDark {
@@ -214,7 +214,7 @@ h1 {
 .contactLight {
   padding-top: 3em;
   padding-bottom: 5em;
-  background-image: linear-gradient(to right, white, darkgrey, #80461B);
+  background-image: var(--light-background);
 }
 
 .contactDark {
