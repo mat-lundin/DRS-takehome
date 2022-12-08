@@ -265,23 +265,20 @@ input:not(.formBtnLight, .formBtnDark) {
 }
 
 .darkBtnLight {
- position: fixed;
+ 
  margin-top: 1.5em;
  margin-left: 19em;
  border-radius: 6px;
  font-family: var(--westernFont);
- opacity: calc(.6);
  
 }
 
 .darkBtnDark {
-  position: fixed;
   margin-top: 1.5em;
   margin-left: 19em;
   border-radius: 6px;
   font-family: var(--westernFont);
   background-color: darkgrey;
-  opacity: calc(.6);
  }
 
  /* Popup container */
