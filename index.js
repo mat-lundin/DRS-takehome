@@ -61,13 +61,22 @@ darkBtn.addEventListener('click', ()=>{
     }
 })
 
-// when form is submitted, do something or at least don't refresh the page
+// when form is submitted, log submitted info to the console or tell the user to enter data
 contactForm.addEventListener('submit',(e)=>{
     e.preventDefault();
     const fnameVal = fnameEl.value;
     const emailVal = emailEl.value;
     const msgVal = msgEl.value;
 
-    console.log(`First Name: ${fnameVal} \nEmail: ${emailVal}\nMessage: ${msgVal}`);
-    confirmEl.innerHTML = 'Form Data Logged to Console!'
+    if (fnameVal || emailVal || msgVal) {
+        console.log(`First Name: ${fnameVal} \nEmail: ${emailVal}\nMessage: ${msgVal}`);
+        confirmEl.innerHTML = 'Form Data Logged to Console!'
+    } else {
+        confirmEl.innerHTML = 'Oops! No data entered. Please enter data and submit.'
+    }
+})
+
+// when reset button is clicked, remove confirmation text
+resetBtn.addEventListener('click', ()=>{
+    confirmEl.innerHTML = ''
 })
