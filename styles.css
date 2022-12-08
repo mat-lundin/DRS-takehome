@@ -247,19 +247,21 @@ input:not(.formBtnLight, .formBtnDark) {
 
 .formBtnLight {
   /* background-color: var(--dark-text-color); */
-  border-style: solid;
-  border-color: black;
+  /* border-style: solid;
+  border-color: black; */
   border-radius: 6px;
   font-family: var(--westernFont);
+  background-color: #ffffff40;
 }
 
 .formBtnDark {
   /* background-color: var(--dark-text-color); */
   border-style: solid;
-  border-color: white;
+  border-color: black;
   border-radius: 6px;
   font-family: var(--westernFont);
   color: var(--dark-text-color);
+  background-color: #ffffff40;
 }
 
 .darkBtnLight {
@@ -293,7 +295,7 @@ input:not(.formBtnLight, .formBtnDark) {
 .popup .popuptext {
   visibility: hidden;
   width: 325px;
-  background-color: #80461B;
+  background-color: #ffffff30;
   color: #fff;
   text-align: center;
   border-radius: 6px;
@@ -361,13 +363,14 @@ input:not(.formBtnLight, .formBtnDark) {
 }
 
 .formBtnLight:hover {
+  background-color: whitesmoke;
   border-style: solid;
   border-color: black;
-  text-shadow: 1px 1px gray;
+  /* text-shadow: 1px 1px gray; */
 }
 
 .formBtnDark:hover {
   border-style: solid;
-  border-color: black;
+  border-color: white;
   text-shadow: 1px 1px black;
 }
