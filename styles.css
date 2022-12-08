@@ -75,7 +75,7 @@ h1 {
 }
 
 .bannerLight {
-  background-image: url('./images/pexels-fwstudio-139309.jpeg');
+  background-image: url('./assets/images/pexels-fwstudio-139309.jpeg');
   color: var(--text-color);
   font-family: var(--westernFont);
   padding-right: 7%;
@@ -85,7 +85,7 @@ h1 {
 }
 
 .bannerDark {
-  background-image: url('./images/pexels-fwstudio-139309.jpeg');
+  background-image: url('./assets/images/pexels-fwstudio-139309.jpeg');
   color: var(--dark-text-color);
   font-family: var(--westernFont);
   padding-right: 7%;
@@ -156,7 +156,7 @@ h1 {
   margin-left: 20%;
   height: 9em;
   width: 9em;
-  background-image: url('./images/istockphoto-106548715-612x612.jpeg');
+  background-image: url('./assets/images/istockphoto-106548715-612x612.jpeg');
   font-size: 19px;
   border-color: black;
   border-width: 4px;

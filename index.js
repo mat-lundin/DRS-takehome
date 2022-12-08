@@ -22,6 +22,7 @@ const emailEl = document.getElementById('email');
 const msgEl = document.getElementById('msg');
 const confirmEl = document.getElementById('confirm');
 
+// keep track of darkmode vs lightmode
 let isDark = false;
 
 // when dark mode button is clicked, replace the light classes for dark classes
@@ -58,8 +59,8 @@ darkBtn.addEventListener('click', ()=>{
         resetBtn.className = 'formBtnDark';
         darkBtn.innerHTML = 'Light Mode';
         isDark = true;
-    }
-})
+    };
+});
 
 // when form is submitted, log submitted info to the console or tell the user to enter data
 contactForm.addEventListener('submit',(e)=>{
@@ -71,12 +72,15 @@ contactForm.addEventListener('submit',(e)=>{
     if (fnameVal || emailVal || msgVal) {
         console.log(`First Name: ${fnameVal} \nEmail: ${emailVal}\nMessage: ${msgVal}`);
         confirmEl.innerHTML = 'Form Data Logged to Console!'
+        fnameEl.value = '';
+        emailEl.value = '';
+        msgEl.value = '';
     } else {
         confirmEl.innerHTML = 'Oops! No data entered. Please enter data and submit.'
-    }
-})
+    };
+});
 
 // when reset button is clicked, remove confirmation text
 resetBtn.addEventListener('click', ()=>{
     confirmEl.innerHTML = ''
-})
+});
