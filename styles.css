@@ -241,30 +241,34 @@ input:not(.formBtnLight, .formBtnDark) {
 
 .darkBtnLight {
  position: fixed;
- float: right;
- margin-right: 15%;
+ margin-top: 1.5em;
+ margin-left: 22em;
  border-radius: 6px;
  font-family: var(--westernFont);
- margin-bottom: 0;
+ opacity: calc(.6);
+ 
 }
 
 .darkBtnDark {
   position: fixed;
-  float: right;
-  margin-right: 15%;
+  margin-top: 1.5em;
+  margin-left: 22em;
   border-radius: 6px;
   font-family: var(--westernFont);
   background-color: darkgrey;
+  opacity: calc(.6);
  }
 
 /* media queries */
-.navlinkLight:hover {
+.navLinkLight:hover {
   background-color: #111;
   cursor: pointer;
+  border-radius: 18px;
 }
 
-.navlinkDark:hover {
+.navLinkDark:hover {
   background-color: #111;
+  border-radius: 18px;
   cursor: pointer;
 }
 
@@ -276,6 +280,7 @@ input:not(.formBtnLight, .formBtnDark) {
 #darkBtn:hover {
   background-image: radial-gradient(circle, white, white, black);
 }
+
 
 .product:hover {
   text-shadow: 3px 2px black;
