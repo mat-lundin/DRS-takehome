@@ -120,18 +120,19 @@
         totam ratione voluptas quod exercitationem fuga. Possimus quis earum veniam 
         quasi aliquam eligendi, placeat qui corporis!</p>
 </div>
-
     <div id="contact" class="contactLight">
         <h1>Contact Us</h1>
         <form id="contactForm">
-            <p>We'd love to hear your feedback or any questions you may have!</p>
+            <p>We WOOD love to hear your feedback or any questions you may have!</p>
             <label for="fname">First name:</label><br>
             <input type="text" id="fname" name="fname"><br>
             <label for="email">Email:</label><br>
             <input type="email" id="email" name="email"><br>
             <label for="msg">Message:</label><br>
             <textarea id="msg" name="msg" rows="5" cols="50"></textarea><br>
-            <input type="submit" value="Submit" id="submitBtn" class="formBtnLight">
+            <div class="popup" onclick="setTimeout(hideFormStatus,2500)"><input type="submit" value="Submit" id="submitBtn" class="formBtnLight">
+                <span class="popuptext" id="myPopup">Popup text...</span>
+              </div>
             <input type="reset" id="resetBtn" class="formBtnLight">
             <p id="confirm"></p>
         </form>

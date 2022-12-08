@@ -105,21 +105,21 @@ h1 {
 #banner h2 {
   font-size: 2.1em;
   margin-left: 20%;
-  padding-bottom: .5em;
+  padding-bottom: .7em;
   text-shadow: 1px 2px black;
 }
 
 #banner h3 {
   font-size: 2.1em;
-  margin-left: 47%;
+  margin-left: 51%;
   text-shadow: 1px 2px black;
 
 }
 
 .shopBtnLight {
   float: right;
-  margin-right: 15%;
-  margin-top: 2em;
+  margin-right: 12%;
+  margin-top: 1em;
   font-size: 2em;
   border-radius: 6px;
   font-family: var(--westernFont);
@@ -128,8 +128,8 @@ h1 {
 
  .shopBtnDark {
   float: right;
-  margin-right: 15%;
-  margin-top: 2em;
+  margin-right: 12%;
+  margin-top: 1em;
   font-size: 2em;
   border-radius: 6px;
   font-family: var(--westernFont);
@@ -263,6 +263,61 @@ input:not(.formBtnLight, .formBtnDark) {
   background-color: darkgrey;
   opacity: calc(.6);
  }
+
+ /* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 325px;
+  background-color: #80461B;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 3px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -24em;
+  opacity: calc(.6);
+}
+
+/* Popup arrow
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+} */
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+/* the to opacity must match the .popup .popuptext opacity! */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: .6;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: .6;}
+}
 
 /* media queries */
 .navLinkLight:hover {
