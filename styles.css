@@ -274,20 +274,21 @@ input:not(.formBtnLight, .formBtnDark) {
 /* The actual popup (appears on top) */
 .popup .popuptext {
   visibility: hidden;
-  width: 160px;
-  background-color: #555;
+  width: 325px;
+  background-color: #80461B;
   color: #fff;
   text-align: center;
   border-radius: 6px;
-  padding: 8px 0;
+  padding: 5px 3px;
   position: absolute;
   z-index: 1;
   bottom: 125%;
   left: 50%;
-  margin-left: -80px;
+  margin-left: -24em;
+  opacity: calc(.6);
 }
 
-/* Popup arrow */
+/* Popup arrow
 .popup .popuptext::after {
   content: "";
   position: absolute;
@@ -297,7 +298,7 @@ input:not(.formBtnLight, .formBtnDark) {
   border-width: 5px;
   border-style: solid;
   border-color: #555 transparent transparent transparent;
-}
+} */
 
 /* Toggle this class when clicking on the popup container (hide and show the popup) */
 .popup .show {
@@ -307,14 +308,15 @@ input:not(.formBtnLight, .formBtnDark) {
 }
 
 /* Add animation (fade in the popup) */
+/* the to opacity must match the .popup .popuptext opacity! */
 @-webkit-keyframes fadeIn {
   from {opacity: 0;}
-  to {opacity: 1;}
+  to {opacity: .6;}
 }
 
 @keyframes fadeIn {
   from {opacity: 0;}
-  to {opacity:1 ;}
+  to {opacity: .6;}
 }
 
 /* media queries */
