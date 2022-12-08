@@ -12,6 +12,7 @@ const shopLink = document.getElementById('shopLink');
 const homeLink = document.getElementById('homeLink');
 const bannerEl = document.getElementById('banner');
 const productsEl = document.getElementById('products');
+const productArr = document.getElementsByClassName('product')
 const aboutEl = document.getElementById('about');
 const contactEl = document.getElementById('contact');
 
@@ -29,6 +30,9 @@ let isDark = false;
 // when dark mode button is clicked, replace the light classes for dark classes
 darkBtn.addEventListener('click', ()=>{
     if (isDark) {
+       Array.prototype.forEach.call(productArr, (element)=>{
+        element.classList.toggle('productDark')
+       })
         bannerEl.className = 'bannerLight';
         shopBtn.className = 'shopBtnLight';
         productsEl.className = 'productsLight';
@@ -45,6 +49,9 @@ darkBtn.addEventListener('click', ()=>{
         darkBtn.innerHTML = 'Dark Mode';
         isDark = false;
     } else {
+        Array.prototype.forEach.call(productArr, (element)=>{
+            element.classList.toggle('productDark')
+           });
         bannerEl.className = 'bannerDark';
         shopBtn.className = 'shopBtnDark';
         productsEl.className = 'productsDark';
