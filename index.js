@@ -16,6 +16,10 @@ const productArr = document.getElementsByClassName('product')
 const aboutEl = document.getElementById('about');
 const contactEl = document.getElementById('contact');
 
+// grab html elements for slides
+// initial code from https://blog.logrocket.com/build-image-carousel-from-scratch-vanilla-javascript/
+const slides = document.querySelectorAll(".slide");
+
 // grab html elements for form
 const contactForm = document.getElementById('contactForm');
 const fnameEl = document.getElementById('fname');
@@ -26,6 +30,19 @@ const popup = document.getElementById("myPopup");
 
 // keep track of darkmode vs lightmode
 let isDark = false;
+
+// assign translateX property to all slides
+slides.forEach((slide, indx) => {
+    slide.style.transform = `translateX(${indx * 100}%)`;
+  });
+
+// keep track of current slidde
+let curSlide = 0;
+const maxSlide = slides.length - 1;
+
+// select next slide button
+const nextSlide = document.querySelector(".btn-next");
+
 
 // when dark mode button is clicked, replace the light classes for dark classes
 darkBtn.addEventListener('click', ()=>{
@@ -115,3 +132,17 @@ function showFormDeny() {
         popup.classList.toggle('show')
     };
   };
+
+// next slide button listener
+nextSlide.addEventListener("click", function () {
+      // check if current slide is the last and reset current slide
+  if (curSlide === maxSlide) {
+    curSlide = 0;
+  } else {
+    curSlide++;
+  }
+
+ slides.forEach((slide, indx) => {
+   slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
+ });
+});
