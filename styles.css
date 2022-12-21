@@ -179,8 +179,6 @@ h1 {
   text-shadow: 3px 2px black;
 }
 
-
-
 .prodDesc {
   padding-top: 1em;
   display: none;
@@ -345,14 +343,14 @@ input:not(.formBtnLight, .formBtnDark) {
 
 .darkBtnLight {
  margin-top: 1.5em;
- margin-left: 19em;
+ margin-left: 14em;
  border-radius: 6px;
  font-family: var(--westernFont);
 }
 
 .darkBtnDark {
   margin-top: 1.5em;
-  margin-left: 19em;
+  margin-left: 14em;
   border-radius: 6px;
   font-family: var(--westernFont);
   background-color: darkgrey;
