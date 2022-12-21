@@ -10,7 +10,7 @@ const navLinks = document.querySelectorAll('.navLinkLight')
 const bannerEl = document.getElementById('banner');
 const productsEl = document.getElementById('products');
 const servicesEl = document.getElementById('services');
-const productArr = document.querySelectorAll('.product')
+const productArr = document.querySelectorAll('.productLight')
 const aboutEl = document.getElementById('about');
 const contactEl = document.getElementById('contact');
 
@@ -47,10 +47,10 @@ const prevSlide = document.querySelector(".btn-prev");
 darkBtn.addEventListener('click', ()=>{
     if (isDark) {
        productArr.forEach((element)=>{
-        element.classList.toggle('productLight')
+        element.classList.toggle('productDark')
        })
        navLinks.forEach((element)=> {
-        element.classList.toggle('navLinkLight')
+        element.classList.toggle('navLinkDark')
        })
         bannerEl.className = 'bannerLight';
         shopBtn.className = 'shopBtnLight';
