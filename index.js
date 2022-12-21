@@ -10,10 +10,10 @@ const navEl = document.getElementById('nav');
 // const aboutLink = document.getElementById('aboutLink');
 // const productsLink = document.getElementById('productsLink');
 // const homeLink = document.getElementById('homeLink');
-const navLinks = document.querySelector('.navLinkLight')
+const navLinks = document.querySelectorAll('.navLinkLight')
 const bannerEl = document.getElementById('banner');
 const productsEl = document.getElementById('products');
-const productArr = document.getElementsByClassName('product')
+const productArr = document.querySelectorAll('.product')
 const aboutEl = document.getElementById('about');
 const contactEl = document.getElementById('contact');
 
@@ -49,12 +49,12 @@ const prevSlide = document.querySelector(".btn-prev");
 // when dark mode button is clicked, replace the light classes for dark classes
 darkBtn.addEventListener('click', ()=>{
     if (isDark) {
-       Array.prototype.forEach.call(productArr, (element)=>{
-        element.classList.toggle('productDark')
-       });
-       Array.prototype.forEach.call(navLinks, (element)=>{
-        element.className = 'navLinkLight';
-       });
+       productArr.forEach((element)=>{
+        element.classList.toggle('productLight')
+       })
+       navLinks.forEach((element)=> {
+        element.classList.toggle('navLinkLight')
+       })
         bannerEl.className = 'bannerLight';
         shopBtn.className = 'shopBtnLight';
         productsEl.className = 'productsLight';
@@ -62,21 +62,17 @@ darkBtn.addEventListener('click', ()=>{
         contactEl.className = 'contactLight';
         darkBtn.className = 'darkBtnLight';
         navEl.className = 'navLight';
-        // contactLink.className = 'navLinkLight';
-        // aboutLink.className = 'navLinkLight';
-        // productsLink.className = 'navLinkLight';
-        // homeLink.className = 'navLinkLight';
         submitBtn.className = 'formBtnLight';
         resetBtn.className = 'formBtnLight';
         darkBtn.innerHTML = 'Dark Mode';
         isDark = false;
     } else {
-        Array.prototype.forEach.call(productArr, (element)=>{
+        productArr.forEach((element)=>{
             element.classList.toggle('productDark')
-           });
-           Array.prototype.forEach.call(navLinks, (element)=>{
-            element.className = 'navLinkDark';
-           });
+           })
+           navLinks.forEach((element)=>{
+            element.classList.toggle('navLinkDark')
+           })
         bannerEl.className = 'bannerDark';
         shopBtn.className = 'shopBtnDark';
         productsEl.className = 'productsDark';
@@ -84,10 +80,6 @@ darkBtn.addEventListener('click', ()=>{
         contactEl.className = 'contactDark';
         darkBtn.className = 'darkBtnDark';
         navEl.className = 'navDark';
-        // contactLink.className = 'navLinkDark';
-        // aboutLink.className = 'navLinkDark';
-        // productsLink.className = 'navLinkDark';
-        // homeLink.className = 'navLinkDark';
         submitBtn.className = 'formBtnDark';
         resetBtn.className = 'formBtnDark';
         darkBtn.innerHTML = 'Light Mode';
