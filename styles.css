@@ -136,7 +136,7 @@ h1 {
 .productsLight {
   padding-top: 3em;
   background-color: var(--light-background);
-  padding-bottom: 3em;
+  /* padding-bottom: 3em; */
   font-family: var(--westernFont);
 }
 
@@ -234,7 +234,7 @@ h1 {
 }
 
 #services h1 {
-  margin-bottom: 1em;
+  margin-bottom: -1em;
 }
 
 /* initial code from https://blog.logrocket.com/build-image-carousel-from-scratch-vanilla-javascript/ */
@@ -244,6 +244,8 @@ h1 {
   height: 350px;
   position: relative;
   overflow: hidden;
+  margin-top: -10em;
+  margin-bottom: -10em;
 }
 
 .slide {
