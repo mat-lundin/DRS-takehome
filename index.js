@@ -40,8 +40,9 @@ slides.forEach((slide, indx) => {
 let curSlide = 0;
 const maxSlide = slides.length - 1;
 
-// select next slide button
+// select next and previous slide buttons
 const nextSlide = document.querySelector(".btn-next");
+const prevSlide = document.querySelector(".btn-prev");
 
 
 // when dark mode button is clicked, replace the light classes for dark classes
@@ -134,15 +135,30 @@ function showFormDeny() {
   };
 
 // next slide button listener
-nextSlide.addEventListener("click", function () {
+nextSlide.addEventListener('click', ()=> {
       // check if current slide is the last and reset current slide
   if (curSlide === maxSlide) {
     curSlide = 0;
   } else {
-    curSlide++;
+    curSlide ++;
   }
 
  slides.forEach((slide, indx) => {
    slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
  });
+});
+
+// previous slide button listener
+prevSlide.addEventListener('click', ()=>{
+  // check if current slide is the first and reset current slide to last
+  if (curSlide === 0) {
+    curSlide = maxSlide;
+  } else {
+    curSlide --;
+  }
+
+  //   move slide by 100%
+  slides.forEach((slide, indx) => {
+    slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
+  });
 });
