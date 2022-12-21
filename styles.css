@@ -427,12 +427,12 @@ input:not(.formBtnLight, .formBtnDark) {
   background-image: radial-gradient(circle, white, white, black);
 }
 
-.product:hover {
+.productLight:hover {
   text-shadow: 3px 2px black;
   cursor: pointer;
 }
 
-.product:hover .prodDesc {
+.productLight:hover .prodDesc {
   display:block;
 }
 
