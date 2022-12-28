@@ -179,10 +179,3 @@ window.addEventListener('scroll',()=> {
     topBtn.style = 'display:none'
   }
 });
-
-// backToTop button brings us back to top of the page
-topBtn.addEventListener('click', ()=> {
-  window.scrollTo({
-    top: 0, 
-  });
-});
