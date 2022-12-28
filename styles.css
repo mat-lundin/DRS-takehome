@@ -439,7 +439,8 @@ input:not(.formBtnLight, .formBtnDark) {
    z-index: 1;
    cursor: pointer;
    /* color: rgb(128,128,128); */
-   opacity: 0.4
+   opacity: 0.4;
+   display:none;
 }
 
 /* media queries */
@@ -494,4 +495,8 @@ input:not(.formBtnLight, .formBtnDark) {
   border-style: solid;
   border-color: white;
   text-shadow: 1px 1px black;
+}
+
+#backToTop:hover {
+  opacity: 1;
 }

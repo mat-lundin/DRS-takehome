@@ -3,6 +3,7 @@ const darkBtn = document.getElementById('darkBtn');
 const shopBtn = document.getElementById('shopBtn');
 const submitBtn = document.getElementById('submitBtn');
 const resetBtn = document.getElementById('resetBtn');
+const topBtn = document.getElementById('backToTop');
 
 // grab html elements for sections
 const navEl = document.getElementById('nav');
@@ -164,5 +165,23 @@ prevSlide.addEventListener('click', ()=>{
   //   move slide by 100%
   slides.forEach((slide, indx) => {
     slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
+  });
+});
+
+// hide and show backToTop button
+window.addEventListener('scroll',()=> {
+  const scrolled = document.documentElement.scrollTop;
+  if (scrolled > 150) {
+    topBtn.style = 'display:block'
+  } else {
+    topBtn.style = 'display:none'
+  }
+});
+
+// backToTop button brings us back to top of the page
+topBtn.addEventListener('click', ()=> {
+  window.scrollTo({
+    top: 0, 
+    behavior: 'smooth'
   });
 });
