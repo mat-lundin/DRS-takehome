@@ -56,6 +56,7 @@ darkBtn.addEventListener('click', ()=>{
        slides.forEach((element)=> {
         element.classList.toggle('slideDark')
        })
+       topBtn.classList.toggle('backToTopDark');
         bannerEl.className = 'bannerLight';
         shopBtn.className = 'shopBtnLight';
         productsEl.className = 'productsLight';
@@ -78,6 +79,7 @@ darkBtn.addEventListener('click', ()=>{
            slides.forEach((element)=> {
             element.classList.toggle('slideDark')
            })
+           topBtn.classList.toggle('backToTopDark');
         bannerEl.className = 'bannerDark';
         shopBtn.className = 'shopBtnDark';
         productsEl.className = 'productsDark';
@@ -182,6 +184,5 @@ window.addEventListener('scroll',()=> {
 topBtn.addEventListener('click', ()=> {
   window.scrollTo({
     top: 0, 
-    behavior: 'smooth'
   });
 });
