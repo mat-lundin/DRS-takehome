@@ -36,3 +36,5 @@ Any questions can be submitted to Mat Lundin via email.
 
 You can access this repository [here.](https://github.com/mat-lundin/DRS-takehome)
 
+![screenshot](./assets/images/screenshot.gif)
+

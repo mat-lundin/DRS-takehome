@@ -143,7 +143,7 @@ h1 {
 .productsDark {
   padding-top: 3em;
   background-image: linear-gradient(to right, navy, black);
-  padding-bottom: 3em;
+  /* padding-bottom: 3em; */
   font-family: var(--westernFont);
   color: var(--dark-text-color);
 }
@@ -208,6 +208,7 @@ h1 {
 }
 
 #about h1 {
+  padding-top: 2em;
   margin-bottom: 1em;
 }
 
@@ -231,10 +232,6 @@ h1 {
   place-items: center;
   background-image: linear-gradient(to right, navy, black);
   color: var(--dark-text-color);
-}
-
-#services h1 {
-  margin-bottom: -1em;
 }
 
 /* initial code from https://blog.logrocket.com/build-image-carousel-from-scratch-vanilla-javascript/ */
