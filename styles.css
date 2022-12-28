@@ -265,9 +265,6 @@ h1 {
 
 .slide p {
   position: absolute;
-  width: 50px;
-  height: 40px;
-  /* padding: 10px; */
   padding-bottom: 6%;
   z-index: 10px;
   cursor: pointer;
@@ -282,8 +279,12 @@ h1 {
 .slideDesc {
   margin-left: 30%;
   margin-top: 10%;
-  width: 30em;
+  width: 40%;
   display: none;
+}
+
+.slideDark p {
+  color: var(--dark-text-color);
 }
 
 .btn {

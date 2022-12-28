@@ -52,6 +52,9 @@ darkBtn.addEventListener('click', ()=>{
        navLinks.forEach((element)=> {
         element.classList.toggle('navLinkDark')
        })
+       slides.forEach((element)=> {
+        element.classList.toggle('slideDark')
+       })
         bannerEl.className = 'bannerLight';
         shopBtn.className = 'shopBtnLight';
         productsEl.className = 'productsLight';
@@ -70,6 +73,9 @@ darkBtn.addEventListener('click', ()=>{
            })
            navLinks.forEach((element)=>{
             element.classList.toggle('navLinkDark')
+           })
+           slides.forEach((element)=> {
+            element.classList.toggle('slideDark')
            })
         bannerEl.className = 'bannerDark';
         shopBtn.className = 'shopBtnDark';
