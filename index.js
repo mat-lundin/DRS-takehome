@@ -3,6 +3,7 @@ const darkBtn = document.getElementById('darkBtn');
 const shopBtn = document.getElementById('shopBtn');
 const submitBtn = document.getElementById('submitBtn');
 const resetBtn = document.getElementById('resetBtn');
+const topBtn = document.getElementById('backToTop');
 
 // grab html elements for sections
 const navEl = document.getElementById('nav');
@@ -55,6 +56,7 @@ darkBtn.addEventListener('click', ()=>{
        slides.forEach((element)=> {
         element.classList.toggle('slideDark')
        })
+       topBtn.classList.toggle('backToTopDark');
         bannerEl.className = 'bannerLight';
         shopBtn.className = 'shopBtnLight';
         productsEl.className = 'productsLight';
@@ -77,6 +79,7 @@ darkBtn.addEventListener('click', ()=>{
            slides.forEach((element)=> {
             element.classList.toggle('slideDark')
            })
+           topBtn.classList.toggle('backToTopDark');
         bannerEl.className = 'bannerDark';
         shopBtn.className = 'shopBtnDark';
         productsEl.className = 'productsDark';
@@ -165,4 +168,14 @@ prevSlide.addEventListener('click', ()=>{
   slides.forEach((slide, indx) => {
     slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
   });
+});
+
+// hide and show backToTop button
+window.addEventListener('scroll',()=> {
+  const scrolled = document.documentElement.scrollTop;
+  if (scrolled > 150) {
+    topBtn.style = 'display:block'
+  } else {
+    topBtn.style = 'display:none'
+  }
 });

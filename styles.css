@@ -12,6 +12,10 @@ a:-webkit-any-link {
   color: inherit;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .navLight {
   list-style-type: none;
   margin: 0;
@@ -428,6 +432,29 @@ input:not(.formBtnLight, .formBtnDark) {
   to {opacity: .6;}
 }
 
+#backToTop {
+  position: fixed; 
+   width: 5%;
+   /* left: 85%; */
+   right: 2%;
+   bottom: 28%;
+   /* height: 20px; */
+   font-size: 4rem;
+   z-index: 1;
+   cursor: pointer;
+   /* color: rgb(128,128,128); */
+   opacity: 0.4;
+   display:none;
+}
+
+.backToTopDark {
+  background-color: var(--light-background);
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  border-bottom-right-radius: 10%;
+  border-bottom-left-radius: 10%;
+}
+
 /* media queries */
 .navLinkLight:hover {
   text-shadow: 1px 3px black;
@@ -480,4 +507,8 @@ input:not(.formBtnLight, .formBtnDark) {
   border-style: solid;
   border-color: white;
   text-shadow: 1px 1px black;
+}
+
+#backToTop:hover {
+  opacity: .7;
 }
