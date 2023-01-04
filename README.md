@@ -1,7 +1,7 @@
-# DRS Take-Home Project
+# Woodworth's Woodworks
 
 ## Description
-  This one page site was built using straight HTML, CSS, and JS (with a small amount of Bootstrap for the product grid). The navigation links and the Shop Now! button take the user to the different sections of the page. Hovering over a product will display the description for that product. Submitting information in the Contact Us form will log that information to the console. The Dark Mode/Light Mode button changes the colors of the background and text, and follows the user down the page for ease of use.
+  This one page sample company site was built using straight HTML, CSS, and JS (with a small amount of Bootstrap for the product grid). The navigation links and the Shop Now! button take the user to the different sections of the page. Hovering over a product will display the description for that product. Submitting information in the Contact Us form will log that information to the console. The Dark Mode/Light Mode button changes the colors of the background and text, and follows the user down the page for ease of use.
 
 ## Table of Contents
 - [Installation](#installation)
